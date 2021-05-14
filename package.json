@@ -19,7 +19,7 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "serve build",
+    "start": "npm run build && serve build",
     "start-dev": "SET PORT=5500 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
