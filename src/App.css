@@ -1,4 +1,113 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 100%;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.5) url("/src/assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  margin: 30px auto;
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+
+.container h1 {
+  color: white;
+  font-size: 36px;
+}
+
+.content {
+  width: 80%;
+  opacity: 0.92;
+  background: #ffffff;
+  margin-top: 5px;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.content p {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.full-width-btn{
+  border: 0;
+  border-radius: 2px;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* .content button[type="submit"] {
+  border: 0;
+  border-radius: 2px;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+} */
+
+.content button[type="submit"]:hover {
+  background-color: #0060c7;
+  opacity: 1;
+}
+
+/* .content button.btn-secondary{
+  background-color: #416a90;
+} */
+
+/* .content button[title="Dashboard"] {
+  margin-top: 15px;
+  border: 0px;
+  border-radius: 2px;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+} */
+
+.full-width{
+  width: 100%;
+}
+
+/* .content button.btn-secondary:hover{
+  background-color: #2a2e31;
+  opacity: 1;
+} */
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +144,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
