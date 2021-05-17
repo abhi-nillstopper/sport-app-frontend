@@ -21,7 +21,7 @@ export default function Dashboard({ history }) {
     { name: "Cycling", value: "cycling" },
     { name: "Swimming", value: "swimming" },
   ];
-  const { isLoggedIn, setIsLoggedIn } = useContext(UserContext);
+  const { setIsLoggedIn } = useContext(UserContext);
 
   const [events, setEvents] = useState([]);
   const [isLoading, SetIsLoading] = useState(true);
@@ -33,7 +33,7 @@ export default function Dashboard({ history }) {
   const [registartionRequests, setRegistartionRequests] = useState([]);
 
   const user_id = localStorage.getItem("user_id");
-  const user = localStorage.getItem("user");
+  // const user = localStorage.getItem("user");
 
   // useEffect(() => {
   //   isLoggedIn && history.push("/login");

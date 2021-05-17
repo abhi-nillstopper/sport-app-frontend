@@ -9,7 +9,7 @@ export default function Login({ history }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const { isLoggedIn, setIsLoggedIn } = useContext(UserContext);
+  const { setIsLoggedIn } = useContext(UserContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

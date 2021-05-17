@@ -1,9 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://sport-app-backend-apis.herokuapp.com/",
+  baseURL: process.env.REACT_APP_AXIOS_BASE_URL.trim(),
 });
-
 api.interceptors.request.use(function (config) {
   const user = localStorage.getItem("user");
   if (user) {
