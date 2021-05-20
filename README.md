@@ -12,7 +12,7 @@
 - Owner of the Event will be notified for new participation request using Socket.io
 - Owner has dashboard to see every participation so far 
 
-## Installation
+## Local Installation
 
 Dillinger requires [Node.js](https://nodejs.org/), [NPM](https://www.npmjs.com/) modules .
 
@@ -24,6 +24,7 @@ npm i
 npm run start-dev
 ```
 App will  run on http://localhost:5500
+
 You can look at below URL to explore the app.
 
 ```sh

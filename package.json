@@ -15,11 +15,12 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "serve": "^11.3.2",
     "socket.io-client": "^4.0.1",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts build",
+    "start": "serve -s build",
     "start-dev": "SET REACT_APP_AXIOS_BASE_URL=http://localhost:8000 && SET PORT=5500 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
