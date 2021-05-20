@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { Form, Button, Container, Alert } from "react-bootstrap";
 import api from "../../service/api";
 import { UserContext } from "../../user-context";
+import "./register.css"
 
 export default function Login({ history }) {
   const [email, setEmail] = useState("");
@@ -50,7 +51,7 @@ export default function Login({ history }) {
   };
 
   return (
-    <Container>
+    <Container className="register-container">
       <h2>Register:</h2>
       <p>
         Please <strong>register</strong> for your account

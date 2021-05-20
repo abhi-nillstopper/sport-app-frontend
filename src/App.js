@@ -8,7 +8,7 @@ import { ContextWrapper } from "./user-context";
 function App() {
   return (
     <ContextWrapper>
-      <Container>
+      <Container className="root-container">
         <Routes />
       </Container>
     </ContextWrapper>

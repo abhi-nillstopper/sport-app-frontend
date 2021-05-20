@@ -1,3 +1,7 @@
+.top-navigation-bar{
+  width: 80%;
+}
+
 .navbar.navbar-expand-lg.navbar-light.bg-light {
   border-radius: 10px;
 }

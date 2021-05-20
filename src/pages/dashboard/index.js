@@ -5,6 +5,7 @@ import {
   Alert,
   SplitButton,
   Dropdown,
+  Container,
 } from "react-bootstrap";
 import moment from "moment";
 import { io as socketio } from "socket.io-client";
@@ -153,7 +154,7 @@ export default function Dashboard({ history }) {
   };
 
   return (
-    <>
+    <Container className="dashboard-container">
       {!isLoading ? (
         <>
           <ul className="notification">
@@ -257,7 +258,9 @@ export default function Dashboard({ history }) {
                     Event Date: {moment(event.date).format("DD,MMM,YY")}
                   </span>
                   <span>Event Sport: {event.sport}</span>
-                  <span>Event Price: (in ₹) {parseFloat(event.price).toFixed(2)}</span>
+                  <span>
+                    Event Price: (in ₹) {parseFloat(event.price).toFixed(2)}
+                  </span>
                   <span>Event Description: {event.description}</span>
                   <Button
                     variant="primary"
@@ -273,6 +276,6 @@ export default function Dashboard({ history }) {
       ) : (
         <></>
       )}
-    </>
+    </Container>
   );
 }

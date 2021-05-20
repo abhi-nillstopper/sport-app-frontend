@@ -1,31 +1,36 @@
+.myregistration-container {
+  width: max-content;
+}
+
 .my-events {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .my-events li {
-    padding: 30px;
-    margin: 1rem;
-    border-radius: 4px;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  padding: 30px;
+  margin: 1rem;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .my-events div {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .my-events-details span {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 .Approved {
-    color: green;
+  color: green;
 }
 
-.Rejected, .Pending {
-    color: red;
+.Rejected,
+.Pending {
+  color: red;
 }

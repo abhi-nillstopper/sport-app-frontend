@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
 import api from "../../service/api";
-import { Button, ButtonGroup, Alert } from "react-bootstrap";
+import { Button, ButtonGroup, Alert, Container } from "react-bootstrap";
 import "./my_registration.css";
 
 export default function MyRegistrations() {
@@ -62,7 +62,7 @@ export default function MyRegistrations() {
   };
 
   return (
-    <>
+    <Container className="myregistration-container">
       {success && (
         <Alert variant="success" className="event-validation">
           {successMessage}
@@ -80,7 +80,9 @@ export default function MyRegistrations() {
               <strong>{event.eventTitle}</strong>
             </div>
             <div className="my-events-details">
-              <span>Event Date: {moment(event.eventDate).format("DD,MMM,YY")}</span>
+              <span>
+                Event Date: {moment(event.eventDate).format("DD,MMM,YY")}
+              </span>
               <span>
                 Event Price: ₹{parseFloat(event.eventPrice).toFixed(2)}
               </span>
@@ -127,6 +129,6 @@ export default function MyRegistrations() {
           </li>
         ))}
       </ul>
-    </>
+    </Container>
   );
 }

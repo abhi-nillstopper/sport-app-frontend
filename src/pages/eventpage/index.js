@@ -145,7 +145,7 @@ class EventPage extends React.Component {
       success,
     } = this.state;
     return (
-      <Container>
+      <Container className="new-event-container">
         <h2>Create your event</h2>
         <Form onSubmit={this.submitHandler}>
           <Form.Group controlId="formBasicThumbnail">
