@@ -14,7 +14,7 @@
 
 ## Local Installation
 
-Dillinger requires [Node.js](https://nodejs.org/), [NPM](https://www.npmjs.com/) modules .
+App requires [Node.js](https://nodejs.org/), [NPM](https://www.npmjs.com/) modules .
 
 Install the dependencies and devDependencies and start the server.
 
