@@ -66,9 +66,9 @@ export default function Login({ history }) {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Form.Group controlId="formBasicCheckbox">
+        {/* <Form.Group controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
+        </Form.Group> */}
         <Form.Group controlId="formBasicSubmit">
           <Button variant="primary" type="submit" className="full-width-btn">
             Login
